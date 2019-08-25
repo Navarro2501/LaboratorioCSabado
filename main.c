@@ -42,5 +42,12 @@ int main(int argc, char *argv[]) {
 	*/
 	resultado =0.666666666 * (numero - (1 - ((numero - 2) / 3))) + 1;
 	printf(" El resultado de la tercera operacion (2 / 3) * (x - (1 - ((x - 2) / 3))) + 1 es %f\n", resultado);
+	
+	/*Se realiza el proceso para resolver la cuarta ecuación
+	  2 - ((-2 * x + 1 * -2) - ((x - 3) / 2))
+	  usando el orden de prioridades (paréntesis del más interno al más externo)
+	*/
+	resultado = 2 - ((-2 * numero + 1 * -2) - ((numero - 3) / 2));
+	printf(" El resultado de la cuarta operación 2 - ((-2 * x + 1 * -2) - ((x - 3) / 2)) es %f\n", resultado);
 	return 0;
 }
