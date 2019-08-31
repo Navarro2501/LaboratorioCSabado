@@ -25,7 +25,6 @@ int main(int argc, char *argv[]) {
 	//En caso de que el segundo número sea mayor (b>a), imprime lo contenido en else
 	else
 		printf("El segundo numero es mayor que el primero: (%d > %d)\n", b, a);
-	printf("Presione cualquier tecla para continuar");
 	system("pause");
 	
 	//**************************************************************************************************************
@@ -86,7 +85,7 @@ int main(int argc, char *argv[]) {
 		printf("El producto de a multiplicado por b es diferente de 15 (%d*%d!=15)\n\n", a,b);
 	
 	//Se evalua la sexta condicion (c/b<a)
-	printf("Sexta condicion (c/b<a)'n'");
+	printf("Sexta condicion (c/b<a)\n");
 	if(c/b<a)
 		printf("c dividido entre b es menor que a (%d/%d<%d)\n\n", c, b, a);
 	else
@@ -131,9 +130,14 @@ int main(int argc, char *argv[]) {
 	//****************************************************************************************************
 	//Actividad extra: repetir la actividad 2, esta vez introduciendo los datos por teclado.
 	printf("Actividad extra: repetir la actividad 2, introduciendo los datos por teclado.\n\n");
-	printf("Introduzca el primer numero: ");
+	printf("Introduzca el primer numero (a): ");
+	scanf("%d", &a);
+	printf("Introduzca el segundo numero (b): ");
+	scanf("%d", &b);
+	printf("Introduzca el tercer numero: (c): ");
+	scanf("%d", &c);
 	//Primer condicion (a>3)
-	printf("Primer condicion: (a>3)\n");
+	printf("\nPrimer condicion: (a>3)\n");
 	if(a>3)
 		printf("a>3 (a=%d)\n\n", a);
 	else 
@@ -144,7 +148,7 @@ int main(int argc, char *argv[]) {
 	if(a>c)
 		printf("a>c (%d>%d)\n\n", a, c);
 	else
-		printf("a<c (%d<%d)\n\n", c, a);
+		printf("a<c (%d<%d)\n\n", a, c);
 		
 	//Se evalua la tercera condicion (b!=c)
 	printf("Tercer condicion (b!=c)\n");
@@ -168,11 +172,11 @@ int main(int argc, char *argv[]) {
 		printf("El producto de a multiplicado por b es diferente de 15 (%d*%d!=15)\n\n", a,b);
 	
 	//Se evalua la sexta condicion (c/b<a)
-	printf("Sexta condicion (c/b<a)'n'");
+	printf("Sexta condicion (c/b<a)\n");
 	if(c/b<a)
 		printf("c dividido entre b es menor que a (%d/%d<%d)\n\n", c, b, a);
 	else
-		printf("c dividido entre b es mayor que a (%d/%d>a)\n\n", c, b, a);
+		printf("c dividido entre b es mayor que a (%d/%d>%d)\n\n", c, b, a);
 	
 	//Se evalua la séptima condicion (c/b==-10)
 	printf("Septima condicion (c/b==-10)\n");
