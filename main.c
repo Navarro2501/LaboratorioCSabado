@@ -36,3 +36,17 @@ int main(int argc, char *argv[]) {
 
 	return 0;
 }
+
+
+
+int contarVocales(char palabra[]){
+  int i, contador = 0;
+
+  for(i=0; i<30; i++){
+    if(palabra[i]=='a'|| palabra[i]=='e'|| palabra[i] =='i' || palabra[i]=='o'|| palabra[i]=='u'){
+      contador++;
+    }
+  }
+
+  return contador;
+}
